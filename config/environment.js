@@ -4,6 +4,15 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'sf-ember-demo',
     environment: environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'img-src': "'self'",
+      'media-src': "'self'"
+    },
+    firebase: 'https://test-stuff.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
