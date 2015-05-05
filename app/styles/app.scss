@@ -1,8 +1,7 @@
  @import 'ember-paper';
 
- .new-article {
+ .new-article a {
     margin-left: 20px;
-    color: #FFCC80;
  }
 
  .article-link {
@@ -12,6 +11,10 @@
  .new-article-form, .new-user-form {
     padding: 15px 25px 10px 25px;
  }
+
+.upvote {
+    cursor: pointer;
+}
 
  .new-user-form input {
     width: 220px;

@@ -5,7 +5,7 @@
         {{#each article in model}}
             {{#paper-item}}
                 {{#paper-tile-left}}
-                    <span {{action 'upvote' article}}>
+                    <span  class="upvote"{{action 'upvote' article}}>
                         {{paper-icon icon="arrow-drop-up" size=2}}</span>
                     <span class="vote-count">
                         {{#if article.votes}}
@@ -16,7 +16,7 @@
                     </span>
                 {{/paper-tile-left}}
                 {{#paper-tile-content}}
-                    <a target="_blank" class="article-link" href={{unbound article.url}}>{{article.title}}</a>
+                    <a class="article-link" href={{unbound article.url}}>{{article.title}}</a>
                     <div>
                         submitted by {{article.user.email}}
                     </div>

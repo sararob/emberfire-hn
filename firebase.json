@@ -1,5 +1,5 @@
 {
-  "firebase": "test-stuff",
+  "firebase": "sf-ember",
   "public": "dist/",
   "ignore": [
     "firebase.json",
